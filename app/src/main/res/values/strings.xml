@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">NaturalSignApp</string>
+    <string name="welcome">Welcome   ></string>
+    <string name="sign_language">Sign Language</string>
+    <string name="english_text">English Text</string>
+    <string name="edt_txt_hint">enter your location</string>
+    <string name="yes">Yes</string>
+    <string name="no">No</string>
+    <string name="ok">Ok</string>
+    <string name="select_ride">Select ride</string>
+    <string name="set_automatically">Set Automatically</string>
+    <string name="set_manually">Set Manually</string>
+    <string name="lite_4_seats">Lite \n4 seats</string>
+    <string name="premium_6_seats">Premium \n6 seats</string>
+</resources>
