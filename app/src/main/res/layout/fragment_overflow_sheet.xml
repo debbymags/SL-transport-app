@@ -1,15 +1,66 @@
 <?xml version="1.0" encoding="utf-8"?>
 <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/prnt"
     android:layout_width="match_parent"
-    android:layout_height="wrap_content"
+    android:layout_height="match_parent"
     xmlns:tools="http://schemas.android.com/tools"
     android:background="@drawable/background_default_curve_13dp">
 
-    <androidx.constraintlayout.widget.ConstraintLayout
+    <LinearLayout
+        android:layout_gravity="center"
+        android:id="@+id/sign_container"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            app:layout_constraintBottom_toTopOf ="@id/contnr"
+
+            android:layout_margin="25dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <VideoView
+                android:id="@+id/videoViewRide"
+                android:layout_width="280dp"
+                android:layout_gravity="center"
+                android:layout_height="280dp"
+                android:layout_marginBottom="20dp" />
+        </LinearLayout>
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/contnr"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="@id/sign_container"
+
+
         android:layout_margin="25dp">
+
+
+
+
+        <View
+            android:id="@+id/first_car"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            app:layout_constraintBottom_toBottomOf="@id/fnote"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"/>
+
+
+        <View
+            android:id="@+id/second_car"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            app:layout_constraintBottom_toBottomOf="@id/f_one_note"
+            app:layout_constraintEnd_toEndOf="@+id/fnote"
+            app:layout_constraintStart_toStartOf="@id/imageView2"
+            app:layout_constraintTop_toTopOf="@id/imageView2"/>
 
         <ImageView
             android:id="@+id/rd_car"
@@ -33,8 +84,8 @@
 
         <ImageView
             android:id="@+id/fnote"
-            android:layout_width="40dp"
-            android:layout_height="40dp"
+            android:layout_width="80dp"
+            android:layout_height="60dp"
             android:paddingTop="5dp"
             android:paddingBottom="5dp"
             android:src="@drawable/fnote"
@@ -43,8 +94,8 @@
 
         <ImageView
             android:id="@+id/imageView3"
-            android:layout_width="40dp"
-            android:layout_height="40dp"
+            android:layout_width="80dp"
+            android:layout_height="60dp"
             android:layout_marginEnd="10dp"
             android:paddingTop="5dp"
             android:paddingBottom="5dp"
@@ -52,6 +103,7 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintEnd_toStartOf="@+id/fnote"
             app:layout_constraintTop_toTopOf="parent" />
+
 
         <ImageView
             android:id="@+id/imageView2"
@@ -66,19 +118,19 @@
 
         <ImageView
             android:id="@+id/f_one_note"
-            android:layout_width="40dp"
-            android:layout_height="40dp"
+            android:layout_width="80dp"
+            android:layout_height="60dp"
+            android:layout_marginTop="8dp"
             android:paddingTop="5dp"
             android:paddingBottom="5dp"
             android:src="@drawable/fnote"
-            app:layout_constraintBottom_toBottomOf="@+id/imageView2"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintTop_toTopOf="@+id/imageView2" />
+            app:layout_constraintEnd_toEndOf="@id/fnote"
+            app:layout_constraintTop_toBottomOf="@id/imageView2" />
 
         <ImageView
             android:id="@+id/f_two_note"
-            android:layout_width="40dp"
-            android:layout_height="40dp"
+            android:layout_width="80dp"
+            android:layout_height="60dp"
             android:layout_marginEnd="10dp"
             android:paddingTop="5dp"
             android:paddingBottom="5dp"
@@ -89,8 +141,8 @@
 
         <ImageView
             android:id="@+id/imageView4"
-            android:layout_width="40dp"
-            android:layout_height="40dp"
+            android:layout_width="80dp"
+            android:layout_height="60dp"
             android:layout_marginEnd="10dp"
             android:paddingTop="5dp"
             android:paddingBottom="5dp"
@@ -107,6 +159,7 @@
             android:layout_marginBottom="20dp"
             android:backgroundTint="@color/black"
             android:text="@string/select_ride"
+            android:textColor="#FEDA32"
             app:cornerRadius="20dp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
@@ -118,12 +171,13 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="8dp"
+            android:text="@string/premium_6_seats"
             android:textStyle="bold"
             app:layout_constraintBottom_toBottomOf="@+id/imageView2"
             app:layout_constraintStart_toEndOf="@+id/imageView2"
-            app:layout_constraintTop_toTopOf="@+id/imageView2"
-            android:text="@string/premium_6_seats" />
+            app:layout_constraintTop_toTopOf="@+id/imageView2" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
+    </LinearLayout>
 
 </FrameLayout>

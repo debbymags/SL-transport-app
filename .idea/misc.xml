@@ -3,6 +3,31 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Debra/AndroidProjects/AndroidProjects/app/src/main/res/drawable/background_default_curve_13dp.xml" value="0.21927083333333333" />
+        <entry key="..\:/Debra/AndroidProjects/AndroidProjects/app/src/main/res/drawable/ic_baseline_home_24.xml" value="0.21927083333333333" />
+        <entry key="..\:/Debra/AndroidProjects/AndroidProjects/app/src/main/res/drawable/ic_launcher_background.xml" value="0.21927083333333333" />
+        <entry key="..\:/Debra/AndroidProjects/AndroidProjects/app/src/main/res/drawable/round_help_bg.xml" value="0.21927083333333333" />
+        <entry key="..\:/Debra/AndroidProjects/AndroidProjects/app/src/main/res/drawable/shadow_thingy.xml" value="0.21927083333333333" />
+        <entry key="..\:/Debra/AndroidProjects/AndroidProjects/app/src/main/res/layout/activity_confirm_pickup.xml" value="0.16757246376811594" />
+        <entry key="..\:/Debra/AndroidProjects/AndroidProjects/app/src/main/res/layout/activity_enf_driver_coming.xml" value="0.16757246376811594" />
+        <entry key="..\:/Debra/AndroidProjects/AndroidProjects/app/src/main/res/layout/activity_eng_confirm_ride.xml" value="0.16757246376811594" />
+        <entry key="..\:/Debra/AndroidProjects/AndroidProjects/app/src/main/res/layout/activity_eng_ride_coming.xml" value="0.16757246376811594" />
+        <entry key="..\:/Debra/AndroidProjects/AndroidProjects/app/src/main/res/layout/activity_eng_search_loaction.xml" value="0.16757246376811594" />
+        <entry key="..\:/Debra/AndroidProjects/AndroidProjects/app/src/main/res/layout/activity_help.xml" value="0.17889492753623187" />
+        <entry key="..\:/Debra/AndroidProjects/AndroidProjects/app/src/main/res/layout/activity_input_destination.xml" value="0.15760869565217392" />
+        <entry key="..\:/Debra/AndroidProjects/AndroidProjects/app/src/main/res/layout/activity_input_eng_destination.xml" value="0.15760869565217392" />
+        <entry key="..\:/Debra/AndroidProjects/AndroidProjects/app/src/main/res/layout/activity_main.xml" value="0.1" />
+        <entry key="..\:/Debra/AndroidProjects/AndroidProjects/app/src/main/res/layout/activity_ride_arrived.xml" value="0.16757246376811594" />
+        <entry key="..\:/Debra/AndroidProjects/AndroidProjects/app/src/main/res/layout/activity_ride_coming.xml" value="0.16394927536231885" />
+        <entry key="..\:/Debra/AndroidProjects/AndroidProjects/app/src/main/res/layout/activity_search_loaction.xml" value="0.16" />
+        <entry key="..\:/Debra/AndroidProjects/AndroidProjects/app/src/main/res/layout/activity_select_eng_location.xml" value="0.16757246376811594" />
+        <entry key="..\:/Debra/AndroidProjects/AndroidProjects/app/src/main/res/layout/activity_select_language.xml" value="0.1" />
+        <entry key="..\:/Debra/AndroidProjects/AndroidProjects/app/src/main/res/layout/activity_select_location.xml" value="0.1" />
+        <entry key="..\:/Debra/AndroidProjects/AndroidProjects/app/src/main/res/layout/fragment_overflow_sheet.xml" value="0.16" />
+        <entry key="..\:/Debra/AndroidProjects/AndroidProjects/app/src/main/res/layout/location_destination_conirm.xml" value="0.15760869565217392" />
+        <entry key="..\:/Debra/AndroidProjects/AndroidProjects/app/src/main/res/layout/ride_coming.xml" value="0.18795289855072464" />
+        <entry key="..\:/Debra/AndroidProjects/AndroidProjects/app/src/main/res/menu/help_menu.xml" value="0.203125" />
+        <entry key="..\:/Debra/AndroidProjects/AndroidProjects/app/src/main/res/menu/main_menu.xml" value="0.203125" />
         <entry key="app/src/main/res/drawable/background_default_curve_13dp.xml" value="0.18333333333333332" />
         <entry key="app/src/main/res/layout/activity_confirm_pickup.xml" value="0.25" />
         <entry key="app/src/main/res/layout/activity_enf_driver_coming.xml" value="0.14221014492753623" />
@@ -19,7 +44,7 @@
       </map>
     </option>
   </component>
-  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="1.8" project-jdk-type="JavaSDK">
     <output url="file://$PROJECT_DIR$/build/classes" />
   </component>
   <component name="ProjectType">

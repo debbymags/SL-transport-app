@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@drawable/background_default_curve_13dp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="25dp">
+
+        <ImageView
+            android:id="@+id/f_tick"
+            android:layout_width="80dp"
+            android:layout_height="60dp"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp"
+            android:src="@drawable/tick"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/locText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:text="@string/location"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="@+id/f_tick"
+            app:layout_constraintStart_toEndOf="@+id/f_tick"
+            app:layout_constraintTop_toTopOf="@+id/f_tick" />
+
+
+
+        <ImageView
+            android:id="@+id/s_tick"
+            android:layout_width="80dp"
+            android:layout_height="60dp"
+            android:layout_marginTop="40dp"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp"
+            android:src="@drawable/tick"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/f_tick" />
+
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/select_ok_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:layout_marginBottom="20dp"
+            android:backgroundTint="@color/black"
+            android:textColor="#FEDA32"
+            android:text="@string/ok"
+            app:cornerRadius="20dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/desText" />
+
+        <TextView
+            android:id="@+id/desText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="@+id/s_tick"
+            app:layout_constraintStart_toEndOf="@+id/s_tick"
+            app:layout_constraintTop_toTopOf="@+id/s_tick"
+            android:text="@string/destination" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</FrameLayout>

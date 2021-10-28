@@ -1,9 +1,10 @@
 <resources>
-    <string name="app_name">NaturalSignApp</string>
-    <string name="welcome">Welcome   ></string>
-    <string name="sign_language">Sign Language</string>
-    <string name="english_text">English Text</string>
-    <string name="edt_txt_hint">enter your location</string>
+    <string name="app_name">SL Transport App</string>
+    <string name="welcome">WELCOME</string>
+    <string name="sign_language">SIGN LANGUGE</string>
+    <string name="english_text">ENGLISH TEXT</string>
+    <string name="edt_txt_hint">enter your destination</string>
+    <string name="edt_txt_hint2">enter your location</string>
     <string name="yes">Yes</string>
     <string name="no">No</string>
     <string name="ok">Ok</string>
@@ -12,4 +13,6 @@
     <string name="set_manually">Set Manually</string>
     <string name="lite_4_seats">Lite \n4 seats</string>
     <string name="premium_6_seats">Premium \n6 seats</string>
+    <string name="location">Your Location</string>
+    <string name="destination">Your Destination</string>
 </resources>
