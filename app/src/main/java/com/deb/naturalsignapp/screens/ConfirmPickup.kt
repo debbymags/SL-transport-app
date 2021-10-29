@@ -31,23 +31,16 @@ class ConfirmPickup : AppCompatActivity() {
 
             database = FirebaseDatabase.getInstance().getReference("Users")
 
-            var uid = MyAppGlobal.Companion.uid
-            var loc = MyAppGlobal.Companion.loc
-            var des = MyAppGlobal.Companion.destination
-            var ride = MyAppGlobal.Companion.ride
+            val uid = MyAppGlobal.Companion.uid
+            val loc = MyAppGlobal.Companion.loc
+            val des = MyAppGlobal.Companion.destination
+            val ride = MyAppGlobal.Companion.ride
             val User = User(uid,loc,des,ride)
 //            val UserD = User
 
 
             database.child(uid).setValue(User).addOnSuccessListener {
                 Log.i("success", "db saved successfully")
-
-                val mailId = "debbymags@gmail.com"
-                val emailIntent = Intent(Intent.ACTION_SENDTO, Uri.fromParts("mailto", mailId, null))
-                emailIntent.putExtra(Intent.EXTRA_SUBJECT, "SL App Ride Request")
-                emailIntent.putExtra(Intent.EXTRA_TEXT, Html.fromHtml("<p><b>Details</b></p>" +
-                        User + "<small><p>More content</p></small>"))
-                startActivity(Intent.createChooser(emailIntent, "Send email..."))
 
             }.addOnFailureListener{
                 Log.i("success", "db saved successfully")
